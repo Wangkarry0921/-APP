@@ -1,0 +1,5 @@
+{
+  "name": "高考英语冲刺 · 单词口语双杀",
+  "description": "一款专为高三学生设计的温暖治愈系英语冲刺应用，涵盖艾宾浩斯单词记忆与AI口语模拟练习。",
+  "requestFramePermissions": ["microphone"]
+}

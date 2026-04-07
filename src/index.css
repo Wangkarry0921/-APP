@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --color-night: #0f172a;
+  --color-sunset: #f97316;
+  --font-sans: "Inter", "Noto Sans SC", sans-serif;
+  --font-serif: "Noto Serif SC", serif;
+}
+
+@layer base {
+  body {
+    @apply bg-night text-slate-200 font-sans antialiased;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+.glass {
+  @apply bg-slate-900/50 backdrop-blur-xl border border-white/10;
+}
+
+.zen-shadow {
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+}
+
+.active-tab {
+  @apply text-sunset;
+}
+
+@keyframes pulse-orange {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.animate-pulse-orange {
+  animation: pulse-orange 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
